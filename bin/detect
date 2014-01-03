@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Install Bower only if there’s a bower.json file
+if [ -f $1/bower.json ]; then
+  echo "Bower"
+  exit 0
+else
+  exit 1
+fi
