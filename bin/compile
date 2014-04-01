@@ -22,4 +22,4 @@ echo "-----> Installing Bower"
 $build_dir/vendor/node/bin/npm install bower --userconfig $build_dir/.npmrc --production 2>&1 | indent
 
 echo "-----> Installing dependencies with Bower $($build_dir/node_modules/.bin/bower -v)"
-$build_dir/node_modules/.bin/bower install 2>&1 | indent
+$build_dir/node_modules/.bin/bower install --force 2>&1 | indent
